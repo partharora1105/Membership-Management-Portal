@@ -1,0 +1,221 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="{{ url_for('static', filename='design.css') }}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Archivo+Narrow&family=Arimo&display=swap" rel="stylesheet">
+
+<meta name="description" content="A Student-Led organization for Georgia Tech Community interested in Virtual/Augmented/Mixed Reality"/>
+    <title>GTXR - Georgia Tech's Portal To Extended Reality</title>
+    <link rel="icon" href="{{url_for('static', filename = 'assets/logoIcon.png')}}"
+          type="image/x-icon">
+  </head>
+  <body>
+
+    <div class="container-fluid main h-100">
+      <!-- Section 1 -->
+      <div class="row section-1 h-100">
+
+        <!-- Navbar -->
+        <div class="row menu">
+          <div class="col-md-12 h-100">
+            <div class="row h-100">
+              <nav class="navbar navbar-expand-lg navbar-light h-100">
+                <div class="container-fluid h-100">
+                  <a class="navbar-brand nav-title h-100" href="#"><img alt="gatech" class="navbar-logo" src="{{url_for('static', filename = 'assets/logoWhiteTransparent.png')}}"></a>
+                  
+                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="" role="button" ><i class="fa fa-bars" aria-hidden="true" style="color:#e6e6ff"></i></span>
+                  </button>
+                  <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                      <li class="nav-item">
+                        <a class="nav-link active options sub-heading " aria-current="page" href="home">Home</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link options sub-heading " href="#About">About</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link options sub-heading " href="projects">Projects</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link options sub-heading " href="#Join">Membership</a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </nav>
+            </div>
+          </div>
+        </div>
+
+          <!-- Section 1 Content -->
+          <div class="row section-1-content">
+            <div class="col-md-5 inner-content">
+              <p class="heading ">GEORGIA TECH'S PORTAL TO EXTENDED REALITY</p>
+               <a href="#Join"><button type="button" class="btn btn-outline-light sub-heading ">Join Now</button></a>
+            </div>
+          </div>
+      </div>
+
+
+      <!-- Section 2 -->
+      <div class="section-2 row " id="About">
+        <div class="col-md-12 h-100">
+
+          <!-- Section 2 heading -->
+          <div class="row">
+            <div class="col-md-12 h-100">
+              <p class="section-2-heading heading">What we do</p>
+            </div>
+          </div>
+
+          <!-- Section 2 content -->
+          <div class="row section-2-content">
+            <div class="col-md-4 box">
+              <div class="wrapper">
+                <div class="card front-face">
+                    <img alt="VR/AR" src="{{url_for('static', filename = 'assets/img1.png')}}">
+                    <p class="card-text sub-heading">Experienced<br> Speakers</p>
+                  </div>
+                  <div class="card back-face">
+                      <p class="para">Interact with Experienced Professionals from all cross the industry who regularly share their thoughts and expertise with the members of our community at exclusive speaker events.</p>
+                  </div>
+              </div>
+            </div>
+            <div class="col-md-4 box">
+              <div class="wrapper">
+                <div class="card front-face">
+                    <img alt="Virtual Reality" src="{{url_for('static', filename = 'assets/img2.png')}}">
+                      <p class="card-text sub-heading ">Practical<br> Projects</p>
+                  </div>
+                  <div class="card back-face">
+                      <p class="para">Work on our signature projects in Virtual, Augmented and Mixed Realities to learn and increase your knowledge in the field and contribute in products that might add value to its users.</p>
+                  </div>
+              </div>
+            </div>
+            <div class="col-md-4 box">
+              <div class="wrapper">
+                <div class="card front-face">
+                    <img alt="Augmented Reality" src="{{url_for('static', filename = 'assets/img3.png')}}">
+                      <p class="card-text sub-heading ">Engaging<br> Community</p>
+                  </div>
+                  <div class="card back-face">
+                      <p class="para">Learn with and from your peers about these vast technologies and get personalized mentorship, especially if you are just starting off and want to explore these technologies.</p>
+                  </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+      <!-- Section 3 -->
+      <div class="section-3 row" id="Join">
+        <div class="col-md-12">
+          <form action="{{domain}}/application" method="post">
+            <div class="row">
+              <div class="col-md-12 h-100">
+                <p class="section-3-heading sub-heading">Join Us Now!</p>
+              </div>
+            </div>
+           <div class="row form-panel">
+             <div class="col-md-12">
+
+                <div class="row form-row">
+                  <div class="col-md-5">
+                    <input class="form-input" type="text" name="name" placeholder="Name" value="{{dataDict['Name']}}">
+                  </div>
+                  <div class="col-md-7">
+                    <input class="form-input" type="email" name="email" placeholder="Email" value="{{dataDict['Email']}}">
+                  </div>
+                </div>
+
+                <div class="row form-row">
+                  <div class="col-md-6">
+                    <label class="form-label sub-heading">Interested in</label>
+                    <input type="checkbox" id="events" name="events" value="true">
+                    <label class="checkbox-label sub-heading" for="events">Events</label>
+                    <input type="checkbox" id="projects" name="projects" value="true">
+                    <label class="checkbox-label sub-heading" for="projects">Projects</label>
+                    <input type="checkbox" id="mentorship" name="mentorship" value="true">
+                    <label class="checkbox-label sub-heading" for="mentorship">Mentorship</label>
+                  </div>
+                  <div class="col-md-3">
+                    <select name="year" class="form-dropdown form-input sub-heading" placeholder="Email" >
+                      <option value="" disabled selected>Year</option>
+                      <option value="1">First</option>
+                      <option value="2">Second</option>
+                      <option value="3">Third</option>
+                      <option value="4">Fourth</option>
+                      <option value="5">Fourth+</option>
+                      <option value="6">NA</option>
+                    </select>
+                  </div>
+                  <div class="col-md-3">
+                    <input class="form-input" type="text" name="major" placeholder="Major (abbreviate)" value="{{dataDict['Major']}}">
+                  </div>
+                  
+                </div>
+                <div class="row form-row">
+                  <div class="col-md-12">
+                    <textarea class="form-input txt-area h-50 sub-heading" name="info" placeholder="Share something about yourself! If you'd rather, feel free to share links like github, linkedin, personal portfolio etc.">{{dataDict['Info']}}</textarea>
+                  </div>
+                </div>
+                <div class="row submit-row">
+                  <div class="col-md-1"></div>
+                  <div class="col-md-9 error-message">
+                    {{errorMessage}}
+                  </div>
+                  <div class="col-md-2">
+                    {% if isSubmitted %}
+                      <input class="btn btn-success" type="submit" value="Submitted!" disabled>
+                    {% else %}
+                      <input class="btn btn-outline-light" type="submit">
+                    {% endif %}
+                  </div>
+                </div>
+              </div>
+            </div>
+          </form> 
+        </div>
+      </div>
+      <!-- Footer - Section 4 -->
+      <div class="footer row">
+        <div class="col-md-10 sub-heading footer-items">
+          Copyright © 2021 GTXR. All rights reserved.
+        </div>
+        <div class="col-md-2 footer-items">
+          <a href="https://www.instagram.com/georgiatechxr/"><img alt="gatech" src="{{url_for('static', filename = 'assets/icon1.png')}}"></a>
+          <a href="mailto:contact@gtxr.club"><img alt="VR" src="{{url_for('static', filename = 'assets/icon2.png')}}"></a>
+          <a href="https://join.slack.com/t/gtxrgroup/shared_invite/zt-1bfj2rjuc-IIdx2Ck6b6h8U7~OCy9Zrw"><img alt="AR" src="{{url_for('static', filename = 'assets/icon3.png')}}"></a>
+        </div>
+      </div>
+
+
+
+
+    </div>
+
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+    -->
+  </body>
+</html>

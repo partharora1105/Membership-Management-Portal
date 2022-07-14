@@ -1,0 +1,445 @@
+body {
+    height: 100vh;
+}
+
+/*Fonts*/
+.heading {
+    font-family: 'Archivo Black', sans-serif;
+}
+.sub-heading {
+    font-family: 'Archivo Narrow', sans-serif;
+}
+.para {
+    font-family: 'Arimo', sans-serif;
+}
+
+/*HOME PAGE*/
+/*Section 1*/
+.section-1 {
+    background-image: url(assets/bg.jpg);
+    background-position: right;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+@media only screen and (max-width: 767px) {
+    .section-1 {
+       background-image: url(assets/phone-bg.jpg);
+    } 
+}
+/*NavBar*/
+.options {
+    color: white!important;
+    font-size: 20px!important;
+}
+.menu{
+    background-color: rgba(0,0,0,0);
+    height: 10%;
+}
+.nav-item {
+    z-index: 2;
+}
+@media only screen and (max-width: 767px) {
+    .navbar-collapse  {
+       background: rgba(0, 0, 0, 0.8);
+    } 
+    .nav-item {
+    margin: auto;
+}
+}
+.nav-item a{
+    background-color: rgba(0,0,0,0);
+    text-align: center;
+    margin-right: 400%;
+}
+.navbar-nav {
+    gap : 50px;
+}
+.navbar-logo {
+    width: 100px;
+}
+.reponsive-navbar-projects {
+    height: 100%;
+}
+/*Only for projects page*/
+@media only screen and (max-width: 767px) {
+    .reponsive-navbar-projects {
+        height: 50%!important;
+    }
+}
+
+
+
+/*Section 1 content*/
+.section-1-content {
+    height: 90%;
+}
+.inner-content {
+    margin-left: 4%;
+    margin-top: 10%;
+}
+.inner-content p {
+    font-size: 50px!important;
+    color: white;
+    
+}
+.inner-content button {
+    width: 30%;
+    font-size: 20px;
+}
+
+
+/*Section 2*/
+
+.section-2 {
+    background: rgb(24,8,17);
+    background: linear-gradient(267deg, rgba(24,8,17,1) 0%, rgba(29,11,24,1) 76%);
+}
+.section-2-heading {
+    font-size: 40px;
+    color: white;
+    margin-top: 8%;
+    margin-left: 10%;
+}
+
+
+
+
+.section-2-content {
+    width: 80%;
+    text-align: center;
+    margin-left: 10%;
+    padding-bottom: 5%;
+}
+
+.box {
+    margin-bottom: 10%;
+}
+
+
+::selection {
+    color: #fff;
+    background: #1cc7d0;
+}
+
+.wrapper {
+    padding: 5%;
+    width: 90%;
+    height: 250px;
+    position: relative;
+    transform-style: preserve-3d;
+    perspective: 1000px;
+}
+
+.wrapper .card {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    padding: 5px;
+    background: rgba(0,0,0,0.4);
+    border-radius: 10px;
+    transform: translateY(0deg);
+    transform-style: preserve-3d;
+    backface-visibility: hidden;
+    box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.7s cubic-bezier(0.4, 0.2, 0.2, 1);
+}
+
+.wrapper:hover>.front-face {
+    transform: rotateY(-180deg);
+}
+
+.wrapper .card img {
+    width: 30%;
+    margin-top: 10%;
+    margin-left: 35%;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.wrapper .back-face {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: column;
+    transform: rotateY(180deg);
+}
+
+.wrapper:hover>.back-face {
+    transform: rotateY(0deg);
+}
+
+.wrapper .back-face img {
+    height: 150px;
+    width: 150px;
+    padding: 5px;
+    border-radius: 50%;
+    background: linear-gradient(375deg, #1cc7d0, #2ede98);
+}
+
+.wrapper .back-face .info {
+    text-align: center;
+}
+
+.back-face .info .title {
+    font-size: 30px;
+    font-weight: 500;
+}
+.back-face {
+    padding: 10%!important;
+    text-align: justify;
+    color: white!important;
+}
+
+.card-text {
+    padding-top: 2%;
+    font-size: 20px;
+    color: white;
+}
+.front-face p {
+    margin-top: 5%;
+}
+
+
+
+/*Section 3*/
+.section-3 {
+    background: rgb(24,7,16);
+    background: linear-gradient(162deg, rgba(24,7,16,1) 0%, rgba(29,16,31,1) 44%, rgba(40,39,84,1) 69%);
+    /*height: 70%;*/
+    padding-bottom: 10%;
+    font-size: 17px;
+}
+.section-3-heading {
+    font-size: 40px;
+    color: white;
+    margin-top: 8%;
+    margin-left: 10%;
+}
+
+.form-panel {
+    background: rgba(0,0,0,0.4);
+    width: 80%;
+    margin-left: 10%;
+    margin-top: 3%;
+    padding: 3% 8%;
+}
+.form-input {
+    background: none;
+    border: none;
+    border-bottom: 2px solid #fff;
+    width: 100%;
+    color: white;
+}
+@media only screen and (max-width: 767px) {
+  .form-input {
+    margin-top: 10%;
+    margin-bottom: 10%;
+  }
+  .txt-area {
+    padding-bottom: 80%;
+  }
+}
+.form-row {
+    margin : 4% 0;
+}
+.form-label {
+    color: grey;
+    margin-right: 5%;
+}
+.checkbox-label {
+    color: grey;
+    margin-right: 2%;
+}
+.form-dropdown {
+    color: grey!important;
+}
+.error-message {
+    color: red;
+}
+.submit-row {
+    text-align: right;
+}
+
+/*Footer*/
+.footer {
+    background-color: #190812;
+    color: white;
+    padding: 2% 5%;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+} 
+.footer img {
+    width: 15%;
+    margin-right: 10%;
+}
+@media only screen and (max-width: 767px) {
+  .footer {
+    padding: 7% 5%;
+  }
+  .footer-items {
+    text-align: center;
+  }
+  .footer img {
+    margin-right: 1%;
+    width: 6%;
+    margin-top: 3%;
+  }
+}
+
+
+
+/*PROJECTS PAGE*/
+/*classe section 3All classes from home page section 1 and footer inclued*/
+.projects-page {
+    background: rgb(24,7,16);
+    background: linear-gradient(0deg, rgba(24,7,16,1) 0%, rgba(29,16,31,1) 44%, rgba(40,39,84,1) 69%);
+    font-size: 17px;
+    color: white!important;
+}
+
+.projects-heading {
+    font-size: 40px;
+    color: white;
+    margin-top: 4%;
+    margin-left: 10%;
+}
+
+.project-row {
+    background: rgba(0,0,0,0.4);
+    width: 80%;
+    margin-left: 10%;
+    margin-top: 2%;
+    padding: 3% 8%;
+}
+.project-name {
+    font-size: 24px;
+}
+.projects-image{
+    width: 95%;
+    margin : 10% 0
+}
+@media only screen and (max-width: 767px) {
+    .project-row {
+    margin-bottom: 10%;
+    padding-bottom: 10%;
+    }
+}
+
+/*Admin*/
+/*classe section 3All classes from home page section 1 and footer inclued*/
+.admin-page {
+    background: rgb(24,7,16);
+    background: linear-gradient(0deg, rgba(24,7,16,1) 0%, rgba(29,16,31,1) 44%, rgba(40,39,84,1) 69%);
+    font-size: 17px;
+    color: white!important;
+}
+.admin-content {
+    height: 80%;
+    padding: 4% 10%;
+}
+.members-box {
+    height: 90%;
+    width: 70%;
+    background-color: rgba(0, 0, 0, 0.4);
+    color: white;
+    border-radius: 20px;
+   /* margin: 0% 0%;*/
+}
+@media only screen and (max-width: 767px) {
+    .members-box {
+     margin: auto;
+    }
+}
+.members-text {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    text-align: center;
+}
+.members-text p {
+    margin: 0!important;
+    font-size: 20px;
+}
+.members-num {
+    font-size: 60px!important;
+}
+.scrollable {
+    overflow-y: scroll;
+    height: 88%;
+}
+.admin-projects-heading {
+    font-size: 20px;
+    padding-bottom: 2%;
+    height: 12%;
+}
+.admin-project-row {
+    background: rgba(0,0,0,0.4);
+    padding: 1% 3%;
+    height: 20%;
+
+}
+.admin-project-row form{
+    height: 12px;    
+}
+.admin-project-row input{
+    float: right;
+    height: 300%;
+}
+.project-input{
+    background: none;
+    border: none;
+    border-bottom: 2px solid #fff;
+    width: 40%;
+    color: white;
+    float: left!important;
+}
+.project-img {
+    width: 15%;
+    color: white;
+    float: left!important;
+    margin-left: 2%;
+}
+.table-heading {
+    margin-top: 3%;
+}
+.table-heading p{
+    font-size: 24px;
+}
+.table-heading input{
+    float: right;
+}
+.data-table td{
+    margin: 5%;
+}
+.custom-row {
+    width: 200%;
+    overflow-x: scroll;
+}
+.custom-cell{
+    width: 4%;
+    display: inline-block;
+    margin-right: 10px;
+    overflow-x: scroll;
+}
+.scroll-data-box {
+    height: 40vh!important;
+    overflow-y: scroll;
+}
+.member-selection-form {
+    width: 40%;
+    display: inline-block;
+}
+.small-width {
+    width: 2%;
+}
+.large-width {
+    width: 10%;
+}
+
+
+
+
+
+
+
