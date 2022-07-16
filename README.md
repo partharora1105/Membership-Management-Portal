@@ -1,5 +1,5 @@
 <h1>GTXR</h1>
-GTXR is a full-stack website built for a student organization that helps admins to organize its members and their data and update the organization's data on the website The public version of the website is available <a href="http://www.gtxr.club/">here</a>
+GTXR is a full-stack responsive website built for a student organization that helps admins to organize its members and their data and update the organization's data on the website. The public version of the website is available <a href="http://www.gtxr.club/">here</a>
 <h2>Setup</h2>
 <ul>
 	<li>Make sure you have python version 3 or higher</li>
@@ -15,4 +15,15 @@ GTXR is a full-stack website built for a student organization that helps admins 
 	<li>Open your browser to <a href="http://localhost:5000">localhost:5000</a> </li>
 </ul>
 <h2>Media</h2>
-In Progress
+<p align="center">
+  <img src="www.projects.bet/Media/github/GTXR/img1.png">
+  <br>Home Page
+</p>
+<p align="center">
+  <img src="www.projects.bet/Media/github/GTXR/img2.png">
+  <br>Responsive Mobile Page
+</p>
+<p align="center">
+  <img src="www.projects.bet/Media/github/GTXR/img3.png">
+  <br>Admin Panel
+</p>
