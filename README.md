@@ -16,7 +16,6 @@ GTXR is a full-stack responsive website built for a student organization that he
 </ul>
 <h2>Media</h2>
 <p align="center">
-<<<<<<< HEAD
   <img src="/github_images/img1.png">
   <br>Home Page
 </p>
