@@ -26,16 +26,5 @@ GTXR is a full-stack responsive website built for a student organization that he
 </p>
 <p align="center">
   <img src="/github_images/img3.png">
-=======
-  <img src="http://www.projects.bet/Media/github/GTXR/img1.png">
-  <br>Home Page
-</p>
-<p align="center">
-  <img width="40%" src="http://www.projects.bet/Media/github/GTXR/img2.png">
-  <br>Responsive Mobile Page
-</p>
-<p align="center">
-  <img src="http://www.projects.bet/Media/github/GTXR/img3.png">
->>>>>>> 15d2daceff4fdace33a0fc1acdb5d5ac24d09dfd
   <br>Admin Panel
 </p>
