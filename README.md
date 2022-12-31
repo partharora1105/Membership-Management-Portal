@@ -1,4 +1,4 @@
-<h1>Membership MAnagement Portal</h1>
+<h1>Membership Management Portal</h1>
 GTXR is a full-stack responsive website built for a student organization that helps admins to organize its members and their data and update the organization's data on the website with a built in CMS system for the admin. The public version of the website is available <a href="http://www.gtxr.club/">here</a>
 <h2>Setup</h2>
 <ul>
